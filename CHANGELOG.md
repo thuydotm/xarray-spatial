@@ -1,3 +1,36 @@
+### Version 0.0.7 - 7/21/2020
+- Added 2D Crosstab (zonal)
+- Added suggest_zonal_canvas (zonal)
+- Added conda-forge build
+- Removed Versioneer
+- Updates to CI/CD
+
+### Version 0.0.6 - 7/14/2020
+- Added Proximity Direction (proximity)
+- Added Proximity Allocation (proximity)
+- Added Zonal Crop (zonal)
+- Added Trim (zonal)
+- Added ebbi (multispectral)
+- Added more tests for slope (slope)
+- Added image grid (readme)
+
+### Version 0.0.5 - 7/5/2020
+- Changed ndvi.py -> multispectral.py
+- Added arvi (multispectral)
+- Added gci (multispectral)
+- Added savi (multispectral)
+- Added evi (multispectral)
+- Added nbr (multispectral)
+- Added sipi (multispectral)
+- Added `count` to default stats (zonal)
+- Added regions tools (zonal)
+
+### Version 0.0.4 - 7/4/2020
+- Test Release
+
+### Version 0.0.3 - 7/4/2020
+- Test Release
+
 ### Version 0.0.2 - 6/24/2020
 - Add Pixel-based Region Connectivity Tool (#52)
 - Fixes to Proximity Tools (#45, #37, #36)

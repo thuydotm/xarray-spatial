@@ -1,6 +1,3 @@
 datashader
 xarray
-scikit-learn
-pytest
-tox
 bokeh>2

@@ -19,7 +19,24 @@
 
 -------
 
-`xarray-spatial` implements common raster analysis functions using Numba and provides an easy-to-install, easy-to-extend codebase for raster analysis.
+Xarray-Spatial implements common raster analysis functions using Numba and provides an easy-to-install, easy-to-extend codebase for raster analysis.
+
+#### Installation
+```bash
+# via pip
+pip install xarray-spatial
+
+# via conda
+conda install -c conda-forge xarray-spatial
+```
+
+| | | | | |
+|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
+|<a href="/examples/user-guide.ipynb"><img width="1604" src="img/0-0.png"></a> | <a href="/examples/user-guide.ipynb"><img width="1604" src="img/0-1.png"></a>|<a href="/examples/user-guide.ipynb"><img width="1604" src="img/0-2.png"></a>|<a href="/examples/user-guide.ipynb"><img width="1604" src="img/0-3.png"></a>|<a href="/examples/user-guide.ipynb"><img width="1604" src="img/0-4.png"></a>|
+|<a href="/examples/user-guide.ipynb"><img width="1604" src="img/1-0.png"></a> | <a href="/examples/user-guide.ipynb"><img width="1604" src="img/1-1.png"></a>|<a href="/examples/user-guide.ipynb"><img width="1604" src="img/1-2.png"></a>|<a href="/examples/user-guide.ipynb"><img width="1604" src="img/1-3.png"></a>|<a href="/examples/user-guide.ipynb"><img width="1604" src="img/1-4.png"></a>|
+|<a href="/examples/user-guide.ipynb"><img width="1604" src="img/2-0.png"></a> | <a href="/examples/user-guide.ipynb"><img width="1604" src="img/2-1.png"></a>|<a href="/examples/user-guide.ipynb"><img width="1604" src="img/2-2.png"></a>|<a href="/examples/user-guide.ipynb"><img width="1604" src="img/2-3.png"></a>|<a href="/examples/user-guide.ipynb"><img width="1604" src="img/2-4.png"></a>|
+|<a href="/examples/user-guide.ipynb"><img width="1604" src="img/3-0.png"></a> | <a href="/examples/user-guide.ipynb"><img width="1604" src="img/3-1.png"></a>|<a href="/examples/user-guide.ipynb"><img width="1604" src="img/3-2.png"></a>|<a href="/examples/user-guide.ipynb"><img width="1604" src="img/3-3.png"></a>|<a href="/examples/user-guide.ipynb"><img width="1604" src="img/3-4.png"></a>|
+
 
 `xarray-spatial` grew out of the [Datashader project](https://datashader.org/), which provides fast rasterization of vector data (points, lines, polygons, meshes, and rasters) for use with xarray-spatial.
 
@@ -28,15 +45,6 @@
 
 Our documentation is still under constructions, but [docs can be found here](https://makepath.github.io/xarray-spatial/).
 
-
-#### Installation
-```bash
-# via conda
-conda install -c makepath xarray-spatial
-
-# via pip
-pip install xarray-spatial
-```
 
 #### Raster-huh?
 
@@ -49,7 +57,7 @@ In the GIS world, rasters are used for representing continuous phenomena (e.g. e
 - [Aspect](xrspatial/aspect.py)
 - [Curvature](xrspatial/curvature.py)
 - [Hillshade](xrspatial/hillshade.py)
-- [Normalized Difference Vegetation Index (NDVI)](xrspatial/ndvi.py)
+- [Multispectral Tools (NDVI, EVI, NBR, SIPI)](xrspatial/multispectral.py)
 - [Focal Statistics](xrspatial/focal.py)
 - [Zonal Statistics](xrspatial/zonal.py)
 - [Zonal Cross Tabulate](xrspatial/zonal.py)
@@ -73,8 +81,12 @@ hillshaded_dataarray = hillshade(my_dataarray)
 Check out the user guide [here](/examples/user-guide.ipynb).
 
 ------
+Check out [Xarray-Spatial on YouTube](https://www.youtube.com/watch?v=z4xrkglmg80)
+------
+
 
 ![title](composite_map.png)
+![title](makepath-supply-chain-international-shipping.png)
 
 #### Dependencies
 
@@ -100,3 +112,6 @@ With the introduction of projects like Numba, Python gained new ways to provide 
 - @jbednar
 - @kristinepetrosyan
 - @sjsrey
+- @giancastro
+- @ocefpaf
+- @rsignell-usgs
